@@ -34,16 +34,16 @@ sudo systemctl restart postgresql
 
 * Conéctate al cliente interactivo de línea de comandos de PostgreSQL con usuario postgres y crea el usuario que desees con la contraseña que desees para la aplicación:
 
-![Imagen](images/im1.png)
+![Imagen](images/im1.PNG)
 
 * Crea la base de datos que desees para la aplicación:
 
-![Imagen](images/im2.png)
+![Imagen](images/im2.PNG)
 
 * Crea la tabla correspondiente dentro de la base de datos que creaste (con usuario postgres) y dale permisos al usuario que creaste:
 
-![Imagen](images/im3.png)
+![Imagen](images/im3.PNG)
 
 * Tras seleccionar "Guardar en base de datos" comprueba el resultado con un select de la tabla:
 
-![Imagen](images/im4.png)
+![Imagen](images/im4.PNG)
