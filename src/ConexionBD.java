@@ -9,6 +9,7 @@ import java.sql.SQLException;
  * Proporciona un método estático para obtener una conexión activa.
  */
 public class ConexionBD {
+    //Con "ip a" en la MV puedes averiguar la IP (192.168.1.136), 5432 es el puerto por defecto en el que escucha PostgreSQL y tareas es el nombre de la base de datos.
     private static final String URL = "jdbc:postgresql://192.168.1.136:5432/tareas";
     private static final String USER = "usuario1";
     private static final String PASSWORD = "usuario1";

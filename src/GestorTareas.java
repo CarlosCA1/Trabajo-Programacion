@@ -122,13 +122,14 @@ public class GestorTareas {
                 ON CONFLICT (titulo)
                 DO UPDATE SET descripcion = EXCLUDED.descripcion
             """;
+            //Prepara la consulta SQL para ejecutarla varias veces con distintos valores
             try (PreparedStatement ps = conn.prepareStatement(sql)) {
                 for (Tarea t : tareas) {
                     ps.setString(1, t.getTitulo());
                     ps.setString(2, t.getDescripcion());
-                    ps.addBatch();
+                    ps.addBatch(); //añadir a una colección de sentencias SQL
                 }
-                ps.executeBatch();
+                ps.executeBatch(); //ejecuta todas las inserciones del batch
             }
         }
     }
